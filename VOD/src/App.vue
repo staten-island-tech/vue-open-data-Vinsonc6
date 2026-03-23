@@ -3,8 +3,7 @@
     <ul>
       <li v-for="item in firehouses" :key="item.facilityname">
         {{ item.facilityname }} - {{ item.primary_facilityaddress }}
-{{ item.facilityaddress }} - {{ item.borough }}
-{{ item.borough }} -
+        {{ item.facilityaddress }} - {{ item.borough }}
       </li>
     </ul>
   </div>
