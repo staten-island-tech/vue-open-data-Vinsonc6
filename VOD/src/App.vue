@@ -23,7 +23,6 @@ async function fetchPosts() {
 const result = filter
 
 
-const filterData()
 
 
 
@@ -51,3 +50,15 @@ const filterData()
 
 
 <style scoped></style>
+<template>
+  <div v-if="items">
+    <ul>
+      <li v-for="item in items" :key="item.id">
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+  <div v-else>
+
+  </div>
+</template>
