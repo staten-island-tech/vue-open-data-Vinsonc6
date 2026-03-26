@@ -15,7 +15,11 @@ import { ref, onMounted } from 'vue'
 const firehouses = ref([])
 
 onMounted(async () => {
-  const res = await fetch('https://data.cityofnewyork.us/resource/hc8x-tcnd.json?$limit=25')
+  const res = await fetch('https://data.cityofnewyork.us/resource/hc8x-tcnd.json')
   firehouses.value = await res.json()
 })
+
+
+
 </script>
+
