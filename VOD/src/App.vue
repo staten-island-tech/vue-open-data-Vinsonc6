@@ -15,22 +15,9 @@ import { ref, onMounted } from 'vue'
 const firehouses = ref([])
 ForeEach()
 onMounted(async () => {
-  const res = await fetch('https://data.cityofnewyork.us/resource/hc8x-tcnd.json')
+  const res = await fetch('https://data.cityofnewyork.us/resource/hc8x-tcnd.json?limit=10')
   firehouses.value = await res.json()
 })
 
-firehouses.ForEach(Brooklyn => {
-if (borough === 0) {
-  console.log (firehouses.name)
-}
-firehouses.ForEach(Mahattan => {
-  if (borough === 0)
-}
-}
-)
-}
-
-
-)
 </script>
 
